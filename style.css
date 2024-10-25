@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 385px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.top-grid__item {
+  height: 628px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.top-grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-content {
+  max-width: 790px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.text-content p {
+  margin-bottom: 20px;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 684px);
+  grid-template-rows: repeat(2, 800px);
+  gap: 8px;
+  justify-content: center;
+}
+
+.bottom-grid__item {
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #faf9f6;
+}
+
+.bottom-grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-grid__content {
+  padding: 40px;
+  height: 100%;
+}
+.bottom-grid__content--bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: auto;
+}
+.bottom-grid__title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  color: #333;
+}
+
+.bottom-grid__text {
+  color: #1f1f1f;
+  line-height: 1.8;
+}
+
+.bottom-grid__text h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+
+  .top-grid {
+    gap: 4px;
+  }
+
+  .top-grid__item {
+    height: 400px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 8px;
+  }
+  .bottom-grid__img {
+    width: 359px;
+    height: 420px;
+  }
+  .bottom-grid__content {
+    padding: 30px;
+  }
+
+  .bottom-grid__title {
+    font-size: 24px;
+  }
+}
